@@ -78,6 +78,14 @@ footer {
     left: 0;
 }
 
+li:hover {
+    cursor: pointer;
+    background-color: var(--primary-color);
+    transition: all 0.5s ease;
+    transform: scale(1.05);
+    color: #ffffff;
+}
+
 /* Media Queries */
 @media (max-width: 1200px) {
     .list {
