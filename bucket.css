@@ -8,6 +8,15 @@
     --font-family: 'Poppins';
 }
 
+main {
+    background-image: url('surf.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
 /* Global Styles */
 * {
     margin: 0;
@@ -18,8 +27,9 @@
 
 /* List Styles */
 .list {
+    border: 1.5px solid #3d5a80;
     list-style: none;
-    background-color: #ffffff;
+    background-color: #dadcf1;
     text-transform: uppercase;
     display: flex;
     flex-direction: column;
@@ -40,6 +50,7 @@
     background-color: var(--secondary-color);
     padding: 0.5em;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    color: #001a3b;
 }
 
 /* Main Styles */
@@ -90,6 +101,13 @@ li:hover {
     transform: scale(1.05);
     color: #ffffff;
 }
+
+.list:hover {
+    transition: all 1s ease-out;
+    background-color: rgba(201, 209, 236, 0.2);
+}
+
+
 
 /* Media Queries */
 @media (max-width: 1200px) {
