@@ -1,10 +1,10 @@
 /* Variables */
 :root {
-    --primary-color: #b23a48;
-    --secondary-color: #fcb9b2;
-    --background-color: #fed0bb;
-    --header-footer-bg: #461220;
-    --footer-bg: #8c2f39;
+    --primary-color: #3d5a80;
+    --secondary-color: #98c1d9;
+    --background-color: #e0fbfc;
+    --header-footer-bg: #ee6c4d;
+    --footer-bg: #293241;
     --font-family: 'Poppins';
 }
 
@@ -49,8 +49,13 @@ main {
     justify-content: center;
     align-items: center;
     /* Ensures content doesn't overflow */
-    padding: 1em;
-    min-height: 80vh;
+    padding-top: 0.5em;
+    padding-bottom: 3em;
+    min-height: 85vh;
+}
+
+body {
+    background-color: var(--background-color);
 }
 
 /* Header Styles */
@@ -112,8 +117,6 @@ li:hover {
     footer {
         height: 4em;
     }
-
-
 }
 
 @media (max-width: 576px) {
@@ -130,6 +133,4 @@ li:hover {
     footer {
         height: 4em;
     }
-
-
 }
