@@ -29,6 +29,7 @@
     gap: 1em;
     height: 100%;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
 }
 
 .list li {
