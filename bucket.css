@@ -25,9 +25,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* max-width: 800px; */
-    padding: 3em;
+    padding: 2em;
     gap: 1em;
+    height: 100%;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
@@ -37,7 +37,7 @@
     width: 100%;
     max-width: 700px;
     background-color: var(--secondary-color);
-    padding: 1em;
+    padding: 0.5em;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
@@ -47,9 +47,9 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 83vh;
     /* Ensures content doesn't overflow */
     padding: 1em;
+    min-height: 80vh;
 }
 
 /* Header Styles */
@@ -59,7 +59,7 @@ header {
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 5em;
+    height: 4em;
     align-items: center;
 }
 
@@ -70,7 +70,7 @@ footer {
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 5em;
+    height: 4em;
     align-items: center;
     position: fixed;
     bottom: 0;
@@ -81,6 +81,7 @@ footer {
 @media (max-width: 1200px) {
     .list {
         max-width: 600px;
+        max-height: max-content;
         padding: 2em;
     }
 }
@@ -95,22 +96,21 @@ footer {
 @media (max-width: 768px) {
     .list {
         max-width: 100%;
-        padding: 3em;
+        padding: 2em;
     }
 
     header,
     footer {
-        height: 6em;
+        height: 4em;
     }
 
-    main {
-        padding-top: 50px;
-    }
+
 }
 
 @media (max-width: 576px) {
     .list {
-        padding: 4em;
+        max-width: 100%;
+        padding: 1.5em;
     }
 
     .list li {
@@ -119,10 +119,8 @@ footer {
 
     header,
     footer {
-        height: 6em;
+        height: 4em;
     }
 
-    main {
-        padding-top: 40px;
-    }
+
 }
